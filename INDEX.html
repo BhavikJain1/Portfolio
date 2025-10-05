@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhavik's Portfolio</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            background-image: url('pictures/paul-earle-wVjd0eWNqI8-unsplash.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            min-height: 100vh;
+            margin: 0;
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        main {
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            /* 3. Stack the photo and name vertically */
+            flex-direction: column; 
+        }
+
+        .profile-circle {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            background-image: url('pictures/WhatsApp Image 2025-10-03 at 18.40.38_023cd26a.jpg');
+            background-size: cover;
+            background-position: center;
+            border: 5px solid white;
+            box-shadow: 0 0 15px rgba(0,0,0,0.3);
+        }
+
+        /* 4. Style your name with the new font */
+        .name-title {
+            font-family: 'Pacifico', cursive; /* Use the imported fancy font */
+            font-size: 4rem; /* Make the font size larger */
+            color: white;
+            margin-top: 20px; /* Add space between the photo and name */
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.5); /* Add a shadow to make it stand out */
+        }
+
+        .navbar {
+            padding: 15px;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .nav-links {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="Home.html">HOME</a></li>
+                <li><a href="About.html">ABOUT</a></li>
+                <li><a href="Projects.html">PROJECTS</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+      <div class="profile-circle"></div>
+      <h1 class="name-title">Bhavik Jain</h1>
+    </main>
+    
+</body>
+</html>
